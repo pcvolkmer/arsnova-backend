@@ -17,6 +17,8 @@
  */
 package de.thm.arsnova.model;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonView;
 import de.thm.arsnova.model.serialization.View;
 import io.swagger.annotations.ApiModel;
@@ -26,7 +28,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Collection of several statistics about ARSnova.
  */
 @ApiModel(value = "statistics", description = "the statistic entity")
-public class Statistics {
+public class Statistics implements Serializable {
 
 	private int answers;
 	private int lectureQuestions;

@@ -43,6 +43,14 @@ couchdb.username=admin
 couchdb.password=
 #couchdb.migrate-from=arsnova
 
+################################################################################
+# Cache
+################################################################################
+# Possible values: concurrentMap, redis. Defaulting to: concurrentMap
+#cache.type=redis
+# Connection params for use with redis cache
+#cache.redis.host=localhost
+#cache.redis.port=6379
 
 ################################################################################
 # E-Mail

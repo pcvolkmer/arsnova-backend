@@ -275,11 +275,6 @@ public class AppConfig implements WebMvcConfigurer {
 	}
 
 	@Bean
-	public CacheManager cacheManager() {
-		return new ConcurrentMapCacheManager();
-	}
-
-	@Bean
 	public JavaMailSenderImpl mailSender() {
 		final JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 		mailSender.setHost(mailHost);
